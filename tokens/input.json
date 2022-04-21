@@ -271,7 +271,7 @@
   },
   "fontSize": {
     "0": {
-      "value": 11,
+      "value": "11px",
       "type": "fontSizes"
     },
     "1": {
@@ -901,7 +901,7 @@
           "fontFamily": "Helvetica",
           "fontWeight": "Regular",
           "lineHeight": 20,
-          "fontSize": 11,
+          "fontSize": "11px",
           "letterSpacing": 0.2,
           "paragraphSpacing": 0,
           "textCase": "none",
@@ -929,7 +929,7 @@
           "fontFamily": "Helvetica",
           "fontWeight": "Bold",
           "lineHeight": 20,
-          "fontSize": 11,
+          "fontSize": "11px",
           "letterSpacing": 0.2,
           "paragraphSpacing": 0,
           "textCase": "none",
