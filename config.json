@@ -1,11 +1,11 @@
 {
-  "source": ["tokens/**/*.json"],
+  "source": ["style-dictionary.json"],
   "platforms": {
     "css": {
       "transformGroup": "css",
       "files": [
         {
-          "destination": "css/variables.css",
+          "destination": "variables.css",
           "format": "css/variables"
         }
       ]
