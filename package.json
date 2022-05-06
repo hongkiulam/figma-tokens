@@ -1,0 +1,24 @@
+{
+  "name": "figma-tokens",
+  "version": "1.0.0",
+  "scripts": {
+    "sd": "node style-dictionary",
+    "tt": "token-transformer tokens.json style-dictionary.json",
+    "build": "npm run tt && npm run sd && node utils/createCustomMedia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongkiulam/figma-tokens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongkiulam/figma-tokens/issues"
+  },
+  "homepage": "https://github.com/hongkiulam/figma-tokens#readme",
+  "devDependencies": {
+    "style-dictionary": "latest",
+    "token-transformer": "latest"
+  }
+}

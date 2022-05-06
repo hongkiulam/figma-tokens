@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const sd = require("./helpers");
-const breakpoints = sd.readStyleDictionary().breakpoints;
+const breakpoints = require("../style-dictionary.json").breakpoints;
 
 if (!breakpoints) {
   throw new Error("breakpoints token is missing");
@@ -12,7 +11,10 @@ let css =
   "/* See https://cssdb.org/#custom-media-queries */\n\n";
 
 for (const breakpoint in breakpoints) {
-  const breakpointValue = breakpoints[breakpoint].value;
+  let breakpointValue = breakpoints[breakpoint].value;
+  if (typeof breakpointValue === "number") {
+    breakpointValue = `${breakpointValue}px`;
+  }
   const max = `@custom-media --${breakpoint}-max (max-width: ${breakpointValue});\n`;
   const min = `@custom-media --${breakpoint}-min (min-width: ${breakpointValue});\n`;
   css += max + min;
