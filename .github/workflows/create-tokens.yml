@@ -15,3 +15,5 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "[auto-commit] Update Tokens"
+      # Purges cache for dist
+      - run: node utils/purgeDist
