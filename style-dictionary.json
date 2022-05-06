@@ -1,63 +1,63 @@
 {
   "spacing": {
     "scale": {
-      "value": 2,
+      "value": "2px",
       "type": "spacing"
     },
     "xs": {
-      "value": 4,
+      "value": "4px",
       "type": "spacing"
     },
     "sm": {
-      "value": 8,
+      "value": "8px",
       "type": "spacing"
     },
     "md": {
-      "value": 16,
+      "value": "16px",
       "type": "spacing"
     },
     "lg": {
-      "value": 32,
+      "value": "32px",
       "type": "spacing"
     },
     "xl": {
-      "value": 64,
+      "value": "64px",
       "type": "spacing"
     }
   },
   "borderRadius": {
     "sm": {
-      "value": 4,
+      "value": "4px",
       "type": "borderRadius"
     },
     "lg": {
-      "value": 8,
+      "value": "8px",
       "type": "borderRadius"
     },
     "xl": {
-      "value": 16,
+      "value": "16px",
       "type": "borderRadius"
     }
   },
   "borderWidth": {
     "none": {
-      "value": 0,
+      "value": "0px",
       "type": "borderWidth"
     },
     "xs": {
-      "value": 1,
+      "value": "1px",
       "type": "borderWidth"
     },
     "sm": {
-      "value": 2,
+      "value": "2px",
       "type": "borderWidth"
     },
     "md": {
-      "value": 4,
+      "value": "4px",
       "type": "borderWidth"
     },
     "lg": {
-      "value": 8,
+      "value": "8px",
       "type": "borderWidth"
     }
   },
@@ -115,7 +115,7 @@
   },
   "letterSpacing": {
     "default": {
-      "value": 0,
+      "value": "0px",
       "type": "letterSpacing"
     },
     "increased": {
@@ -129,11 +129,11 @@
   },
   "paragraphSpacing": {
     "h1": {
-      "value": 32,
+      "value": "32px",
       "type": "paragraphSpacing"
     },
     "h2": {
-      "value": 26,
+      "value": "26px",
       "type": "paragraphSpacing"
     }
   },
@@ -157,39 +157,39 @@
   },
   "fontSizes": {
     "h1": {
-      "value": 48.829,
+      "value": "48.829px",
       "type": "fontSizes"
     },
     "h2": {
-      "value": 39.063,
+      "value": "39.063px",
       "type": "fontSizes"
     },
     "h3": {
-      "value": 31.25,
+      "value": "31.25px",
       "type": "fontSizes"
     },
     "h4": {
-      "value": 25,
+      "value": "25px",
       "type": "fontSizes"
     },
     "h5": {
-      "value": 20,
+      "value": "20px",
       "type": "fontSizes"
     },
     "h6": {
-      "value": 16,
+      "value": "16px",
       "type": "fontSizes"
     },
     "body": {
-      "value": 16,
+      "value": "16px",
       "type": "fontSizes"
     },
     "sm": {
-      "value": 13.6,
+      "value": "13.6px",
       "type": "fontSizes"
     },
     "xs": {
-      "value": 10.4,
+      "value": "10.4px",
       "type": "fontSizes"
     }
   },
@@ -213,7 +213,7 @@
   },
   "level-1": {
     "shadow-1": {
-      "value": "0 4 8 0 #00000025",
+      "value": "0px 4px 8px 0px #00000025",
       "type": "boxShadow"
     }
   }
