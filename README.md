@@ -4,6 +4,10 @@ This example illustrates how you can transform your tokens stored on Figma Token
 
 Change your tokens in `tokens.json` (either directly or with the Figma Tokens plugin in Figma). The GitHub action will automatically generate style dictionary tokens to `style-dictionary.json` that can then be read by Style Dictionary, which will output tokens to the format you defined in `config.json`
 
+### Before Making Change...
+
+Always `git pull` before making changes as it's very likely there are remote changes because of the auto-commit bot configured in the Github Action
+
 ### Utils
 
 Added some utils to clean up tokens so that they are css compatible

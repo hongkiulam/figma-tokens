@@ -119,11 +119,11 @@
       "type": "letterSpacing"
     },
     "increased": {
-      "value": "150%",
+      "value": "1.5em",
       "type": "letterSpacing"
     },
     "decreased": {
-      "value": "-5%",
+      "value": "-0.05em",
       "type": "letterSpacing"
     }
   },

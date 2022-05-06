@@ -68,6 +68,17 @@ const parseFontWeights = (tokenObject) => {
 };
 
 /**
+ * @param {TokenObject} tokenObject
+ */
+const convertLetterSpacingPercentageToEM = (tokenObject) => {
+  if (tokenObject.type === "letterSpacing" && tokenObject.value.endsWith("%")) {
+    const rawNumber = Number(tokenObject.value.replace("%", ""));
+    const percentageAsEmValue = rawNumber / 100;
+    tokenObject.value = `${percentageAsEmValue}em`;
+  }
+};
+
+/**
  * @param {TokenObject} tokenParent
  */
 const processTokenValue = (tokenParent) => {
@@ -84,6 +95,7 @@ const processTokenValue = (tokenParent) => {
       castNumberToPx(tokenObject);
       flattenShadowObject(tokenObject);
       parseFontWeights(tokenObject);
+      convertLetterSpacingPercentageToEM(tokenObject)
     }
   }
 };
