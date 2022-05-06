@@ -53,7 +53,7 @@ modifyStyleDictionary((styleDictionary) => {
       "Extra Bold": 800,
       Black: 900,
     };
-    if (typeof tokenObject.type === "fontWeights") {
+    if (tokenObject.type === "fontWeights") {
       const numericFontWeight = fontWeightMapping[tokenObject.value];
       if (numericFontWeight !== undefined) {
         tokenObject.value = numericFontWeight;
