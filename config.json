@@ -5,8 +5,17 @@
       "transformGroup": "css",
       "files": [
         {
-          "destination": "variables.css",
+          "destination": "dist/variables.css",
           "format": "css/variables"
+        }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "files": [
+        {
+          "destination": "dist/variables.scss",
+          "format": "scss/variables"
         }
       ]
     }
