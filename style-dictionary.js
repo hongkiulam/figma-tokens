@@ -112,7 +112,7 @@ StyleDictionary.registerTransformGroup({
 StyleDictionary.registerTransformGroup({
   name: "scss",
   transforms: [
-    // based on https://amzn.github.io/style-dictionary/#/transform_groups?id=css
+    // based on https://amzn.github.io/style-dictionary/#/transform_groups?id=scss
     "attribute/cti",
     "name/cti/kebab",
     "time/seconds",
