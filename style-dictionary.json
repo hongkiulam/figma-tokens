@@ -139,19 +139,19 @@
   },
   "fontWeights": {
     "headingRegular": {
-      "value": "Regular",
+      "value": 400,
       "type": "fontWeights"
     },
     "headingBold": {
-      "value": "Bold",
+      "value": 700,
       "type": "fontWeights"
     },
     "bodyRegular": {
-      "value": "Regular",
+      "value": 400,
       "type": "fontWeights"
     },
     "bodyBold": {
-      "value": "Bold",
+      "value": 700,
       "type": "fontWeights"
     }
   },
