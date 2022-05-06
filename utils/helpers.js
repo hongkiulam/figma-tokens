@@ -13,7 +13,7 @@ const STYLE_DICTIONARY_PATH = require("path").join(
  *
  * @returns {StyleDictionary} styleDictionary
  */
-const getStyleDictionary = () =>
+const readStyleDictionary = () =>
   JSON.parse(fs.readFileSync(STYLE_DICTIONARY_PATH, "utf-8"));
 
 /**
@@ -29,5 +29,5 @@ const writeStyleDictionary = (styleDictionary) =>
   );
 
 exports.STYLE_DICTIONARY_PATH = STYLE_DICTIONARY_PATH;
-exports.getStyleDictionary = getStyleDictionary;
+exports.readStyleDictionary = readStyleDictionary;
 exports.writeStyleDictionary = writeStyleDictionary;

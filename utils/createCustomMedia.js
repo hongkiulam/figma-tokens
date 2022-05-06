@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
-const sd = require("./styleDictionary");
-const breakpoints = sd.getStyleDictionary().breakpoints;
+const sd = require("./helpers");
+const breakpoints = sd.readStyleDictionary().breakpoints;
 
 if (!breakpoints) {
   throw new Error("breakpoints token is missing");
