@@ -6,7 +6,10 @@
       "files": [
         {
           "destination": "dist/variables.css",
-          "format": "css/variables"
+          "format": "css/variables",
+          "options": {
+            "showFileHeader": false
+          }
         }
       ]
     },
@@ -15,7 +18,10 @@
       "files": [
         {
           "destination": "dist/variables.scss",
-          "format": "scss/variables"
+          "format": "scss/variables",
+          "options": {
+            "showFileHeader": false
+          }
         }
       ]
     }

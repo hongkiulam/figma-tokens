@@ -8,10 +8,6 @@ if (!breakpoints) {
 }
 
 let css =
-  `/**\n` +
-  ` * Do not edit directly\n` +
-  ` * Generated on ${new Date().toUTCString()}\n` +
-  ` */\n\n` +
   "/* This file requires PostCSS to work */\n" +
   "/* See https://cssdb.org/#custom-media-queries */\n\n";
 
