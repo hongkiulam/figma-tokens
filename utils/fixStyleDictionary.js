@@ -41,6 +41,32 @@ modifyStyleDictionary((styleDictionary) => {
     }
   };
 
+  const parseFontWeights = (tokenObject) => {
+    const fontWeightMapping = {
+      Thin: 100,
+      "Extra Light": 200,
+      Light: 300,
+      Regular: 400,
+      Medium: 500,
+      "Semi Bold": 600,
+      Bold: 700,
+      "Extra Bold": 800,
+      Black: 900,
+    };
+    if (typeof tokenObject.type === "fontWeights") {
+      const numericFontWeight = fontWeightMapping[tokenObject.value];
+      if (numericFontWeight !== undefined) {
+        tokenObject.value = numericFontWeight;
+      } else {
+        if (typeof tokenObject.value === "number") {
+          // already numeric
+        } else {
+          throw new Error(`Unrecognised fontweight ${tokenObject.value}`);
+        }
+      }
+    }
+  };
+
   const processValue = (tokenParent) => {
     for (const token in tokenParent) {
       const tokenObject = tokenParent[token];
@@ -51,6 +77,7 @@ modifyStyleDictionary((styleDictionary) => {
         // we found the token (because it has a value) - do some processing
         castNumberToPx(tokenObject);
         flattenShadowObject(tokenObject);
+        parseFontWeights(tokenObject);
       }
     }
   };
