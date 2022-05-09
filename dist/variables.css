@@ -49,8 +49,8 @@
   --text-case-uppercase: uppercase;
   --text-decoration-none: none;
   --text-decoration-underline: underline;
-  --breakpoints-xl: 1366px;
-  --breakpoints-lg: 1024px;
-  --breakpoints-md: 768px;
-  --breakpoints-sm: 375px;
+  --breakpoints-xl: 1366px; /* Extra large desktop screen sizes */
+  --breakpoints-lg: 1024px; /* Small desktop and tablet landscape */
+  --breakpoints-md: 768px; /* tablet portrait */
+  --breakpoints-sm: 375px; /* Mobile portrait */
 }
