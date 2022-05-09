@@ -89,6 +89,13 @@ StyleDictionary.registerTransform({
   },
 });
 
+StyleDictionary.registerTransform({
+  name: "descriptionToComment",
+  type: "attribute",
+  matcher: (token) => token.description,
+  transformer: (token) => (token.comment = token.description),
+});
+
 // Transform Groups
 
 StyleDictionary.registerTransformGroup({
@@ -106,6 +113,7 @@ StyleDictionary.registerTransformGroup({
     "flattenShadow",
     "fontweightsToNumber",
     "letterSpacingPercentageToEM",
+    "descriptionToComment",
   ],
 });
 
@@ -124,6 +132,7 @@ StyleDictionary.registerTransformGroup({
     "flattenShadow",
     "fontweightsToNumber",
     "letterSpacingPercentageToEM",
+    "descriptionToComment",
   ],
 });
 

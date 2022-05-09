@@ -15,8 +15,10 @@ for (const breakpoint in breakpoints) {
   if (typeof breakpointValue === "number") {
     breakpointValue = `${breakpointValue}px`;
   }
-  const max = `@custom-media --${breakpoint}-max (max-width: ${breakpointValue});\n`;
-  const min = `@custom-media --${breakpoint}-min (min-width: ${breakpointValue});\n`;
+  const description = breakpoints[breakpoint].description || '';
+  const comment = description ? ` /* ${description} */`: ''
+  const max = `@custom-media --${breakpoint}-max (max-width: ${breakpointValue});${comment}\n`;
+  const min = `@custom-media --${breakpoint}-min (min-width: ${breakpointValue});${comment}\n`;
   css += max + min;
 }
 
