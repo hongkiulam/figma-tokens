@@ -354,7 +354,8 @@
         "textCase": "uppercase",
         "textDecoration": "none"
       },
-      "type": "typography"
+      "type": "typography",
+      "description": "Heading1 for Desktop and tablet"
     },
     "S": {
       "value": {
