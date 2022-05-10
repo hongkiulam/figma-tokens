@@ -10,41 +10,50 @@
     },
     "accent": {
       "value": "#1bc49f",
-      "type": "color"
+      "type": "color",
+      "description": "Jade"
     }
   },
   "Secondary": {
-    "15": {
+    "1": {
       "value": "#dcf9f6",
-      "type": "color"
+      "type": "color",
+      "description": "Jade light"
     },
-    "Blue": {
+    "2": {
       "value": "#0d3499",
-      "type": "color"
+      "type": "color",
+      "description": "Blue"
     },
-    "Blue Light": {
+    "3": {
       "value": "#ced4e3",
-      "type": "color"
+      "type": "color",
+      "description": "Blue light"
     },
-    "Red": {
+    "4": {
       "value": "#ff2121",
-      "type": "color"
+      "type": "color",
+      "description": "Red"
     },
-    "Red Light": {
+    "5": {
       "value": "#fed7d7",
-      "type": "color"
+      "type": "color",
+      "description": "Red Light"
     },
-    "Orange": {
+    "6": {
       "value": "#ff6336",
-      "type": "color"
+      "type": "color",
+      "description": "Orange"
     },
-    "Orange Light": {
+    "7": {
       "value": "#fde5dd",
-      "type": "color"
+      "type": "color",
+      "description": "Orange Light"
     },
-    "Yellow": {
+    "8": {
       "value": "#ffe563",
-      "type": "color"
+      "type": "color",
+      "description": "Yellow"
     },
     "Yellow Light": {
       "value": "#fef4c3",
@@ -95,18 +104,18 @@
       "type": "color"
     }
   },
-  "shadow": {
-    "value": {
-      "color": "#0000001a",
-      "type": "dropShadow",
-      "x": 10,
-      "y": 10,
-      "blur": 30,
-      "spread": 0
-    },
-    "type": "boxShadow"
-  },
   "Shadow": {
+    "Card": {
+      "value": {
+        "color": "#0000001a",
+        "type": "dropShadow",
+        "x": 10,
+        "y": 10,
+        "blur": 30,
+        "spread": 0
+      },
+      "type": "boxShadow"
+    },
     "Chip": {
       "value": {
         "color": "#10101030",
@@ -211,10 +220,6 @@
     "1": {
       "value": "20%",
       "type": "letterSpacing"
-    },
-    "2": {
-      "value": "2%",
-      "type": "letterSpacing"
     }
   },
   "paragraphSpacing": {
@@ -223,9 +228,9 @@
       "type": "paragraphSpacing"
     }
   },
-  "text-Base": {
+  "textBase": {
     "value": {
-      "fontFamily": "Helvetica",
+      "fontFamily": "Segoe UI",
       "fontWeight": "Regular",
       "lineHeight": "160%",
       "fontSize": 16,
@@ -523,6 +528,12 @@
       "value": 375,
       "type": "sizing",
       "description": "Mobile portrait"
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "value": "2px",
+      "type": "borderRadius"
     }
   }
 }

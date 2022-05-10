@@ -1,15 +1,15 @@
 :root {
   --primary-1: #101010;
   --primary-2: #ffffff;
-  --primary-accent: #1bc49f;
-  --secondary-15: #dcf9f6;
-  --secondary-blue: #0d3499;
-  --secondary-blue-light: #ced4e3;
-  --secondary-red: #ff2121;
-  --secondary-red-light: #fed7d7;
-  --secondary-orange: #ff6336;
-  --secondary-orange-light: #fde5dd;
-  --secondary-yellow: #ffe563;
+  --primary-accent: #1bc49f; /* Jade */
+  --secondary-1: #dcf9f6; /* Jade light */
+  --secondary-2: #0d3499; /* Blue */
+  --secondary-3: #ced4e3; /* Blue light */
+  --secondary-4: #ff2121; /* Red */
+  --secondary-5: #fed7d7; /* Red Light */
+  --secondary-6: #ff6336; /* Orange */
+  --secondary-7: #fde5dd; /* Orange Light */
+  --secondary-8: #ffe563; /* Yellow */
   --secondary-yellow-light: #fef4c3;
   --background-grey: #959595;
   --background-grey-light: #d0d0d0;
@@ -20,7 +20,7 @@
   --semantic-positive: #006b52;
   --accessible-grey: #767676;
   --interaction-hover: #158c70;
-  --shadow: 10px 10px 30px 0px #0000001a;
+  --shadow-card: 10px 10px 30px 0px #0000001a;
   --shadow-chip: 0px 2px 10px 0px #10101030;
   --font-families-heading: Helvetica;
   --font-families-text: Segoe UI;
@@ -43,7 +43,6 @@
   --font-size-8: 48px;
   --letter-spacing-0: 0em;
   --letter-spacing-1: 0.2em;
-  --letter-spacing-2: 0.02em;
   --paragraph-spacing-0: 0px;
   --text-case-none: none;
   --text-case-uppercase: uppercase;
@@ -53,4 +52,5 @@
   --breakpoints-lg: 1024px; /* Small desktop and tablet landscape */
   --breakpoints-md: 768px; /* tablet portrait */
   --breakpoints-sm: 375px; /* Mobile portrait */
+  --border-radius-sm: 2px;
 }
