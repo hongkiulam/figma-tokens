@@ -39,4 +39,6 @@ _Transforms_
 npm run build
 ```
 
+This is configured to generate CSS variables, CSS custom media queries and SCSS variables in `dist`.
+
 This script is also used by the Github Action so to make changes to the CI, simply change this file
