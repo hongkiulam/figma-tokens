@@ -19,12 +19,13 @@
   --semantic-critical: #dd3100;
   --semantic-negative: #b90000;
   --semantic-positive: #006b52;
-  --hover-secondary: #158c70;
-  --hover-primary: #000000;
+  --interaction-1: #000000;
+  --interaction-2: #158c70;
+  --interaction-3: #97E2D0;
   --shadow-card: 10px 10px 30px 0px #0000001a;
   --shadow-chip: 0px 2px 10px 0px #10101030;
-  --font-families-body: Helvetica;
-  --font-families-heading: Segoe UI;
+  --font-families-heading: Helvetica;
+  --font-families-text: Segoe UI;
   --line-heights-0: 160%;
   --line-heights-1: 150%;
   --line-heights-2: 125%;
