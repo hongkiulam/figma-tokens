@@ -534,6 +534,10 @@
     "sm": {
       "value": "2px",
       "type": "borderRadius"
+    },
+    "none": {
+      "value": "0px",
+      "type": "borderRadius"
     }
   }
 }

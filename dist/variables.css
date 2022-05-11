@@ -53,4 +53,5 @@
   --breakpoints-md: 768px; /* tablet portrait */
   --breakpoints-sm: 375px; /* Mobile portrait */
   --border-radius-sm: 2px;
+  --border-radius-none: 0px;
 }
