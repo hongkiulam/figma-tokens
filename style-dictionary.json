@@ -77,7 +77,7 @@
       "value": "#f8f8f8",
       "type": "color"
     },
-    "accessible": {
+    "Accessible": {
       "value": "#767676",
       "type": "color"
     }
@@ -131,11 +131,11 @@
     }
   },
   "fontFamilies": {
-    "heading": {
+    "body": {
       "value": "Helvetica",
       "type": "fontFamilies"
     },
-    "text": {
+    "heading": {
       "value": "Segoe UI",
       "type": "fontFamilies"
     }
@@ -232,7 +232,7 @@
   },
   "textBase": {
     "value": {
-      "fontFamily": "Segoe UI",
+      "fontFamily": "Helvetica",
       "fontWeight": "Regular",
       "lineHeight": "160%",
       "fontSize": 16,
