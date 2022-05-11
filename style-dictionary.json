@@ -60,8 +60,8 @@
       "type": "color"
     }
   },
-  "Background": {
-    "Grey": {
+  "Grey": {
+    "grey": {
       "value": "#959595",
       "type": "color"
     },
@@ -75,6 +75,10 @@
     },
     "Silver Light": {
       "value": "#f8f8f8",
+      "type": "color"
+    },
+    "accessible": {
+      "value": "#767676",
       "type": "color"
     }
   },
@@ -92,15 +96,13 @@
       "type": "color"
     }
   },
-  "Accessible": {
-    "Grey": {
-      "value": "#767676",
-      "type": "color"
-    }
-  },
-  "Interaction": {
-    "Hover": {
+  "Hover": {
+    "Secondary": {
       "value": "#158c70",
+      "type": "color"
+    },
+    "Primary": {
+      "value": "#000000",
       "type": "color"
     }
   },

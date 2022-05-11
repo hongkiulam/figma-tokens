@@ -11,15 +11,16 @@
   --secondary-7: #fde5dd; /* Orange Light */
   --secondary-8: #ffe563; /* Yellow */
   --secondary-yellow-light: #fef4c3;
-  --background-grey: #959595;
-  --background-grey-light: #d0d0d0;
-  --background-silver: #ededed;
-  --background-silver-light: #f8f8f8;
+  --grey-grey: #959595;
+  --grey-grey-light: #d0d0d0;
+  --grey-silver: #ededed;
+  --grey-silver-light: #f8f8f8;
+  --grey-accessible: #767676;
   --semantic-critical: #dd3100;
   --semantic-negative: #b90000;
   --semantic-positive: #006b52;
-  --accessible-grey: #767676;
-  --interaction-hover: #158c70;
+  --hover-secondary: #158c70;
+  --hover-primary: #000000;
   --shadow-card: 10px 10px 30px 0px #0000001a;
   --shadow-chip: 0px 2px 10px 0px #10101030;
   --font-families-heading: Helvetica;
