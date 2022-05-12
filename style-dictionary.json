@@ -777,17 +777,32 @@
     }
   },
   "Heading 6": {
-    "value": {
-      "fontFamily": "Segoe UI",
-      "fontWeight": "Bold",
-      "lineHeight": "120%",
-      "fontSize": 14,
-      "letterSpacing": "20%",
-      "paragraphSpacing": 0,
-      "textCase": "uppercase",
-      "textDecoration": "none"
+    "default": {
+      "value": {
+        "fontFamily": "Segoe UI",
+        "fontWeight": "Bold",
+        "lineHeight": "120%",
+        "fontSize": 14,
+        "letterSpacing": "20%",
+        "paragraphSpacing": 0,
+        "textCase": "uppercase",
+        "textDecoration": "none"
+      },
+      "type": "typography"
     },
-    "type": "typography"
+    "underline": {
+      "value": {
+        "fontFamily": "Segoe UI",
+        "fontWeight": "Bold",
+        "lineHeight": "120%",
+        "fontSize": 14,
+        "letterSpacing": "20%",
+        "paragraphSpacing": 0,
+        "textCase": "uppercase",
+        "textDecoration": "underline"
+      },
+      "type": "typography"
+    }
   },
   "Heading 1": {
     "L": {
