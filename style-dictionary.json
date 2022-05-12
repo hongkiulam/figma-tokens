@@ -245,19 +245,17 @@
       "textCase": "none",
       "textDecoration": "none"
     },
-    "type": "typography"
-  },
-  "text-Based": {
+    "type": "typography",
     "bold": {
       "value": {
-        "fontFamily": "Helvetica",
-        "fontWeight": "Bold",
-        "lineHeight": "150%",
-        "fontSize": 16,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 0,
-        "textCase": "none",
-        "textDecoration": "none"
+        "fontFamily": "{fontFamilies.body}",
+        "fontWeight": "{fontWeights.bold}",
+        "lineHeight": "$lineHeights.1",
+        "fontSize": "$fontSize.2",
+        "letterSpacing": "$letterSpacing.0",
+        "paragraphSpacing": "$paragraphSpacing.0",
+        "textCase": "$textCase.none",
+        "textDecoration": "$textDecoration.none"
       },
       "type": "typography"
     }
@@ -518,17 +516,17 @@
     "xl": {
       "value": 1366,
       "type": "sizing",
-      "description": "Extra large desktop screen sizes"
-    },
-    "lg": {
-      "value": 1024,
-      "type": "sizing",
-      "description": "Small desktop and tablet landscape"
+      "description": ">=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)"
     },
     "md": {
+      "value": 1024,
+      "type": "sizing",
+      "description": ">=1024: Small desktop and tablet landscape"
+    },
+    "ms": {
       "value": 768,
       "type": "sizing",
-      "description": "tablet portrait"
+      "description": ">=768px: tablet portrait"
     },
     "sm": {
       "value": 375,

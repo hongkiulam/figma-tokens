@@ -1,11 +1,11 @@
 /* This file requires PostCSS to work */
 /* See https://cssdb.org/#custom-media-queries */
 
-@custom-media --xl-max (max-width: 1366px); /* Extra large desktop screen sizes */
-@custom-media --xl-min (min-width: 1366px); /* Extra large desktop screen sizes */
-@custom-media --lg-max (max-width: 1024px); /* Small desktop and tablet landscape */
-@custom-media --lg-min (min-width: 1024px); /* Small desktop and tablet landscape */
-@custom-media --md-max (max-width: 768px); /* tablet portrait */
-@custom-media --md-min (min-width: 768px); /* tablet portrait */
+@custom-media --xl-max (max-width: 1366px); /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
+@custom-media --xl-min (min-width: 1366px); /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
+@custom-media --md-max (max-width: 1024px); /* >=1024: Small desktop and tablet landscape */
+@custom-media --md-min (min-width: 1024px); /* >=1024: Small desktop and tablet landscape */
+@custom-media --ms-max (max-width: 768px); /* >=768px: tablet portrait */
+@custom-media --ms-min (min-width: 768px); /* >=768px: tablet portrait */
 @custom-media --sm-max (max-width: 375px); /* Mobile portrait */
 @custom-media --sm-min (min-width: 375px); /* Mobile portrait */
