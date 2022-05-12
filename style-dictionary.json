@@ -135,11 +135,11 @@
     }
   },
   "fontFamilies": {
-    "heading": {
+    "body": {
       "value": "Helvetica",
       "type": "fontFamilies"
     },
-    "text": {
+    "heading": {
       "value": "Segoe UI",
       "type": "fontFamilies"
     }
@@ -236,7 +236,7 @@
   },
   "textBase": {
     "value": {
-      "fontFamily": "Segoe UI",
+      "fontFamily": "Helvetica",
       "fontWeight": "Regular",
       "lineHeight": "160%",
       "fontSize": 16,
