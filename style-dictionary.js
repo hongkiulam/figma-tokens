@@ -38,7 +38,7 @@ StyleDictionary.registerFilter({
 StyleDictionary.registerTransform({
   name: "numberToPx",
   type: "value",
-  matcher: (token) => typeof token.value === "number",
+  matcher: (token) => typeof token.value === "number" && token.type !== "opacity",
   transformer: (token) => `${token.value}px`,
 });
 
