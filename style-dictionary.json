@@ -1045,5 +1045,74 @@
       "type": "spacing",
       "description": "8px"
     }
+  },
+  "borderWidth": {
+    "1": {
+      "value": 1,
+      "type": "borderWidth",
+      "description": "1px"
+    },
+    "2": {
+      "value": 2,
+      "type": "borderWidth",
+      "description": "2px"
+    }
+  },
+  "opacity": {
+    "20": {
+      "value": "2*10%",
+      "type": "opacity",
+      "description": "20%"
+    },
+    "30": {
+      "value": "3*10%",
+      "type": "opacity",
+      "description": "0%"
+    },
+    "40": {
+      "value": "4*10%",
+      "type": "opacity",
+      "description": "40%"
+    },
+    "50": {
+      "value": "5*10%",
+      "type": "opacity",
+      "description": "50%"
+    },
+    "60": {
+      "value": "6*10%",
+      "type": "opacity",
+      "description": "60%"
+    },
+    "70": {
+      "value": "7*10%",
+      "type": "opacity",
+      "description": "70%"
+    },
+    "80": {
+      "value": "8*10%",
+      "type": "opacity",
+      "description": "80%"
+    },
+    "85": {
+      "value": "8.5*10%",
+      "type": "opacity",
+      "description": "85%"
+    },
+    "90": {
+      "value": "9*10%",
+      "type": "opacity",
+      "description": "90%"
+    },
+    "95": {
+      "value": "9.5*10%",
+      "type": "opacity",
+      "description": "95%"
+    },
+    "base": {
+      "value": "10%",
+      "type": "opacity",
+      "description": "10%"
+    }
   }
 }
