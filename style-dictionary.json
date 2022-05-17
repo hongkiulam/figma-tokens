@@ -996,5 +996,15 @@
       "value": "0px",
       "type": "borderRadius"
     }
+  },
+  "space": {
+    "0": {
+      "value": "0.5*8px",
+      "type": "spacing"
+    },
+    "base": {
+      "value": "8px",
+      "type": "spacing"
+    }
   }
 }
