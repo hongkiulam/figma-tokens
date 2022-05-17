@@ -68,15 +68,15 @@
   --space-base: 8px; /* 8px */
   --border-width-1: 1px; /* 1px */
   --border-width-2: 2px; /* 2px */
-  --opacity-20: 2*10%; /* 20% */
-  --opacity-30: 3*10%; /* 0% */
-  --opacity-40: 4*10%; /* 40% */
-  --opacity-50: 5*10%; /* 50% */
-  --opacity-60: 6*10%; /* 60% */
-  --opacity-70: 7*10%; /* 70% */
-  --opacity-80: 8*10%; /* 80% */
-  --opacity-85: 8.5*10%; /* 85% */
-  --opacity-90: 9*10%; /* 90% */
-  --opacity-95: 9.5*10%; /* 95% */
-  --opacity-base: 10%; /* 10% */
+  --opacity-20: 0.2px; /* 20% */
+  --opacity-30: 0.3px; /* 0% */
+  --opacity-40: 0.4px; /* 40% */
+  --opacity-50: 0.5px; /* 50% */
+  --opacity-60: 0.6px; /* 60% */
+  --opacity-70: 0.7px; /* 70% */
+  --opacity-80: 0.8px; /* 80% */
+  --opacity-85: 0.85px; /* 85% */
+  --opacity-90: 0.9px; /* 90% */
+  --opacity-95: 0.95px; /* 95% */
+  --opacity-base: 0.1px; /* 10% */
 }
