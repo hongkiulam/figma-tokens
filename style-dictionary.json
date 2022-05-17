@@ -152,27 +152,15 @@
   },
   "lineHeights": {
     "0": {
-      "value": "160%",
-      "type": "lineHeights"
-    },
-    "1": {
       "value": "150%",
       "type": "lineHeights"
     },
-    "2": {
-      "value": "125%",
-      "type": "lineHeights"
-    },
-    "3": {
-      "value": "120%",
-      "type": "lineHeights"
-    },
-    "4": {
+    "1": {
       "value": "130%",
       "type": "lineHeights"
     },
-    "5": {
-      "value": "135%",
+    "2": {
+      "value": "120%",
       "type": "lineHeights"
     }
   },
@@ -185,7 +173,7 @@
       "value": "Bold",
       "type": "fontWeights"
     },
-    "body-light": {
+    "light": {
       "value": "Light",
       "type": "fontWeights"
     }
@@ -249,7 +237,7 @@
       "value": {
         "fontFamily": "Helvetica",
         "fontWeight": "Regular",
-        "lineHeight": "160%",
+        "lineHeight": "150%",
         "fontSize": 16,
         "letterSpacing": "0%",
         "paragraphSpacing": 0,
@@ -262,7 +250,7 @@
       "value": {
         "fontFamily": "Helvetica",
         "fontWeight": "Light",
-        "lineHeight": "160%",
+        "lineHeight": "150%",
         "fontSize": 16,
         "letterSpacing": "0%",
         "paragraphSpacing": 0,
@@ -303,7 +291,7 @@
       "value": {
         "fontFamily": "Helvetica",
         "fontWeight": "Regular",
-        "lineHeight": "160%",
+        "lineHeight": "150%",
         "fontSize": 18,
         "letterSpacing": "0%",
         "paragraphSpacing": 0,
@@ -316,7 +304,7 @@
       "value": {
         "fontFamily": "Helvetica",
         "fontWeight": "Light",
-        "lineHeight": "160%",
+        "lineHeight": "150%",
         "fontSize": 18,
         "letterSpacing": "0%",
         "paragraphSpacing": 0,
@@ -329,7 +317,7 @@
       "value": {
         "fontFamily": "Helvetica",
         "fontWeight": "Bold",
-        "lineHeight": "160%",
+        "lineHeight": "150%",
         "fontSize": 18,
         "letterSpacing": "0%",
         "paragraphSpacing": 0,
@@ -342,7 +330,7 @@
       "value": {
         "fontFamily": "Helvetica",
         "fontWeight": "Bold",
-        "lineHeight": "160%",
+        "lineHeight": "150%",
         "fontSize": 18,
         "letterSpacing": "0%",
         "paragraphSpacing": 0,
@@ -823,7 +811,7 @@
       "value": {
         "fontFamily": "Segoe UI",
         "fontWeight": "Bold",
-        "lineHeight": "120%",
+        "lineHeight": "130%",
         "fontSize": 40,
         "letterSpacing": "20%",
         "paragraphSpacing": 0,
@@ -922,7 +910,7 @@
       "value": {
         "fontFamily": "Segoe UI",
         "fontWeight": "Bold",
-        "lineHeight": "135%",
+        "lineHeight": "130%",
         "fontSize": 20,
         "letterSpacing": "20%",
         "paragraphSpacing": 0,
