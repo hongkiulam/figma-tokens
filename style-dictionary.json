@@ -230,6 +230,10 @@
     "0": {
       "value": 0,
       "type": "paragraphSpacing"
+    },
+    "1": {
+      "value": 8,
+      "type": "paragraphSpacing"
     }
   },
   "text-base": {
