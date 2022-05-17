@@ -16,6 +16,6 @@ jobs:
       # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "[auto-commit] Update Tokens"
+          commit_message: "[auto-commit] Update Tokens - ${{ github.event.head_commit.message }}"
       # Purges cache for dist
       - run: node utils/purgeDist
