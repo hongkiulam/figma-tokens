@@ -1,13 +1,21 @@
 {
-  "bg": {
+  "copy": {
     "1": {
       "value": "#2f2f2f",
       "type": "color"
+    },
+    "2": {
+      "value": "#545454",
+      "type": "color"
     }
   },
-  "copy": {
+  "bg": {
     "1": {
       "value": "#fafafa",
+      "type": "color"
+    },
+    "2": {
+      "value": "#d4d4d4",
       "type": "color"
     }
   },
@@ -309,16 +317,6 @@
       "description": "10%"
     }
   },
-  "dark": {
-    "1": {
-      "value": "#2f2f2f",
-      "type": "color"
-    },
-    "2": {
-      "value": "#545454",
-      "type": "color"
-    }
-  },
   "primary": {
     "accent": {
       "value": "#e88a46",
@@ -330,16 +328,6 @@
     },
     "dark": {
       "value": "#2f2f2f",
-      "type": "color"
-    }
-  },
-  "light": {
-    "1": {
-      "value": "#fafafa",
-      "type": "color"
-    },
-    "2": {
-      "value": "#d4d4d4",
       "type": "color"
     }
   },
