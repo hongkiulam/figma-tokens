@@ -1,4 +1,16 @@
 {
+  "bg": {
+    "1": {
+      "value": "#2f2f2f",
+      "type": "color"
+    }
+  },
+  "copy": {
+    "1": {
+      "value": "#fafafa",
+      "type": "color"
+    }
+  },
   "shadow": {
     "chip": {
       "value": {

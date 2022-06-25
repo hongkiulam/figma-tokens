@@ -1,3 +1,5 @@
+export const Bg1 = "#2f2f2f";
+export const Copy1 = "#fafafa";
 export const ShadowChip = "0px 2px 10px 0px #2f2f2f30";
 export const ShadowCard = "0px 10px 30px 0px #2f2f2f30";
 export const FontFamiliesBody = "Baloo 2";
