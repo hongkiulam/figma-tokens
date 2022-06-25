@@ -1,4 +1,5 @@
 export const ShadowChip = "0px 2px 10px 0px #2f2f2f30";
+export const ShadowCard = "0px 10px 30px 0px #2f2f2f30";
 export const FontFamiliesBody = "Baloo 2";
 export const FontFamiliesHeading = "Baloo 2";
 export const LineHeights0 = "AUTO";
@@ -64,7 +65,6 @@ export const Light2 = "#d4d4d4";
 export const SemanticError = "#d84545";
 export const SemanticWarning = "#d89d45";
 export const SemanticPositive = "#43b81a";
-export const Card = "0px 10px 30px 0px #2f2f2f30";
 export const H2 = {"fontFamily":"Baloo 2","fontWeight":"Regular","lineHeight":"AUTO","fontSize":24,"letterSpacing":"0%","paragraphSpacing":0,"textCase":"none","textDecoration":"none"};
 export const Body = {"fontFamily":"Baloo 2","fontWeight":"Regular","lineHeight":"AUTO","fontSize":16,"letterSpacing":"0%","paragraphSpacing":0,"textCase":"none","textDecoration":"none"};
 export const Grey1 = "#d4d4d4";

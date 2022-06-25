@@ -10,6 +10,17 @@
         "type": "dropShadow"
       },
       "type": "boxShadow"
+    },
+    "card": {
+      "value": {
+        "x": 0,
+        "y": 10,
+        "blur": 30,
+        "spread": 0,
+        "color": "#2f2f2f30",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
     }
   },
   "fontFamilies": {
@@ -333,17 +344,6 @@
       "value": "#43b81a",
       "type": "color"
     }
-  },
-  "card": {
-    "value": {
-      "x": 0,
-      "y": 10,
-      "blur": 30,
-      "spread": 0,
-      "color": "#2f2f2f30",
-      "type": "dropShadow"
-    },
-    "type": "boxShadow"
   },
   "h2": {
     "value": {
