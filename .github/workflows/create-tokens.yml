@@ -1,5 +1,8 @@
-name: CI
-on: [push]
+name: Build Tokens From Figma Changes
+on:
+  push:
+    branches:
+      - "main"
 
 jobs:
   build:
