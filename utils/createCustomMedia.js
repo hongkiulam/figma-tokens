@@ -1,3 +1,5 @@
+// breakpoints require is broken
+// not used
 const fs = require("fs");
 const path = require("path");
 const breakpoints = require("../style-dictionary.json").breakpoints;

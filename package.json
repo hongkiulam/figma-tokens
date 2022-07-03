@@ -2,9 +2,8 @@
   "name": "figma-tokens",
   "version": "1.0.0",
   "scripts": {
-    "sd": "node style-dictionary",
-    "tt": "token-transformer tokens.json style-dictionary.json",
-    "build": "npm run tt && npm run sd && node utils/createCustomMedia"
+    "prebuild": "rm -rf ./dist/* && rm -rf ./style-dictionary/*",
+    "build": "node utils/build.js"
   },
   "repository": {
     "type": "git",
