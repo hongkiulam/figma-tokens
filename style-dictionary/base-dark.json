@@ -170,6 +170,11 @@
       "type": "spacing",
       "description": "4px"
     },
+    "1": {
+      "value": 8,
+      "type": "spacing",
+      "description": "8px"
+    },
     "2": {
       "value": 16,
       "type": "spacing",
@@ -214,11 +219,6 @@
       "value": 80,
       "type": "spacing",
       "description": "80px"
-    },
-    "base": {
-      "value": 8,
-      "type": "spacing",
-      "description": "8px"
     }
   },
   "borderWidth": {
