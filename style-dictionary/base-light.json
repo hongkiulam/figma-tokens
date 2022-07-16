@@ -108,7 +108,7 @@
       "type": "paragraphSpacing"
     },
     "1": {
-      "value": 8,
+      "value": "8px",
       "type": "paragraphSpacing"
     }
   },
@@ -166,57 +166,57 @@
   },
   "space": {
     "0": {
-      "value": 4,
+      "value": "4px",
       "type": "spacing",
       "description": "4px"
     },
     "1": {
-      "value": 8,
+      "value": "8px",
       "type": "spacing",
       "description": "8px"
     },
     "2": {
-      "value": 16,
+      "value": "16px",
       "type": "spacing",
       "description": "16px"
     },
     "3": {
-      "value": 24,
+      "value": "24px",
       "type": "spacing",
       "description": "24px"
     },
     "4": {
-      "value": 32,
+      "value": "32px",
       "type": "spacing",
       "description": "32px"
     },
     "5": {
-      "value": 40,
+      "value": "40px",
       "type": "spacing",
       "description": "40px"
     },
     "6": {
-      "value": 48,
+      "value": "48px",
       "type": "spacing",
       "description": "48px"
     },
     "7": {
-      "value": 56,
+      "value": "56px",
       "type": "spacing",
       "description": "56px"
     },
     "8": {
-      "value": 64,
+      "value": "64px",
       "type": "spacing",
       "description": "64px"
     },
     "9": {
-      "value": 72,
+      "value": "72px",
       "type": "spacing",
       "description": "72px"
     },
     "10": {
-      "value": 80,
+      "value": "80px",
       "type": "spacing",
       "description": "80px"
     }
