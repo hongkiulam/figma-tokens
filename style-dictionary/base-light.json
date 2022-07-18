@@ -366,6 +366,19 @@
     "h1": {
       "value": 36,
       "type": "fontSizes"
+    },
+    "small": {
+      "value": "12px",
+      "type": "fontSizes"
     }
+  },
+  "small": {
+    "value": {
+      "fontFamily": "Baloo 2",
+      "fontWeight": "Regular",
+      "lineHeight": "AUTO",
+      "fontSize": "12px"
+    },
+    "type": "typography"
   }
 }
