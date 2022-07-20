@@ -1,22 +1,28 @@
 {
-  "copy": {
-    "1": {
-      "value": "#fafafa",
-      "type": "color"
+  "color": {
+    "copy": {
+      "1": {
+        "value": "$primary.light",
+        "type": "color",
+        "failedToResolve": true
+      },
+      "2": {
+        "value": "$grey.1",
+        "type": "color",
+        "failedToResolve": true
+      }
     },
-    "2": {
-      "value": "#d4d4d4",
-      "type": "color"
-    }
-  },
-  "bg": {
-    "1": {
-      "value": "#2f2f2f",
-      "type": "color"
-    },
-    "2": {
-      "value": "#545454",
-      "type": "color"
+    "bg": {
+      "1": {
+        "value": "$primary.dark",
+        "type": "color",
+        "failedToResolve": true
+      },
+      "2": {
+        "value": "$grey.2",
+        "type": "color",
+        "failedToResolve": true
+      }
     }
   },
   "shadow": {
@@ -290,34 +296,6 @@
       "description": "10%"
     }
   },
-  "primary": {
-    "accent": {
-      "value": "#e88a46",
-      "type": "color"
-    },
-    "light": {
-      "value": "#fafafa",
-      "type": "color"
-    },
-    "dark": {
-      "value": "#2f2f2f",
-      "type": "color"
-    }
-  },
-  "semantic": {
-    "error": {
-      "value": "#d84545",
-      "type": "color"
-    },
-    "warning": {
-      "value": "#d89d45",
-      "type": "color"
-    },
-    "positive": {
-      "value": "#43b81a",
-      "type": "color"
-    }
-  },
   "h2": {
     "value": {
       "fontFamily": "Baloo 2",
@@ -343,16 +321,6 @@
       "textDecoration": "none"
     },
     "type": "typography"
-  },
-  "grey": {
-    "1": {
-      "value": "#d4d4d4",
-      "type": "color"
-    },
-    "2": {
-      "value": "#545454",
-      "type": "color"
-    }
   },
   "fontSize": {
     "body": {
