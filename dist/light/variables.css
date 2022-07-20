@@ -30,10 +30,10 @@
   --text-case-uppercase: uppercase;
   --text-decoration-none: none;
   --text-decoration-underline: underline;
-  --sizing-breakpoints-xl: 1366px; /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
-  --sizing-breakpoints-md: 1024px; /* >=1024: Small desktop and tablet landscape */
-  --sizing-breakpoints-ms: 768px; /* >=768px: tablet portrait */
-  --sizing-breakpoints-sm: 375px; /* Mobile portrait */
+  --breakpoints-xl: 1366px; /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
+  --breakpoints-md: 1024px; /* >=1024: Small desktop and tablet landscape */
+  --breakpoints-ms: 768px; /* >=768px: tablet portrait */
+  --breakpoints-sm: 375px; /* Mobile portrait */
   --border-radius-s: 2px;
   --border-radius-none: 0px;
   --spacing-0: 4px; /* 4px */

@@ -29,10 +29,10 @@ export const TextCaseNone = "none";
 export const TextCaseUppercase = "uppercase";
 export const TextDecorationNone = "none";
 export const TextDecorationUnderline = "underline";
-export const SizingBreakpointsXl = "1366px"; // >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)
-export const SizingBreakpointsMd = "1024px"; // >=1024: Small desktop and tablet landscape
-export const SizingBreakpointsMs = "768px"; // >=768px: tablet portrait
-export const SizingBreakpointsSm = "375px"; // Mobile portrait
+export const BreakpointsXl = "1366px"; // >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)
+export const BreakpointsMd = "1024px"; // >=1024: Small desktop and tablet landscape
+export const BreakpointsMs = "768px"; // >=768px: tablet portrait
+export const BreakpointsSm = "375px"; // Mobile portrait
 export const BorderRadiusS = "2px";
 export const BorderRadiusNone = "0px";
 export const Spacing0 = "4px"; // 4px
