@@ -23,6 +23,44 @@
         "type": "color",
         "failedToResolve": true
       }
+    },
+    "grey": {
+      "1": {
+        "value": "#d4d4d4",
+        "type": "color"
+      },
+      "2": {
+        "value": "#545454",
+        "type": "color"
+      }
+    },
+    "primary": {
+      "accent": {
+        "value": "#e88a46",
+        "type": "color"
+      },
+      "light": {
+        "value": "#fafafa",
+        "type": "color"
+      },
+      "dark": {
+        "value": "#2f2f2f",
+        "type": "color"
+      }
+    },
+    "semantic": {
+      "error": {
+        "value": "#d84545",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#d89d45",
+        "type": "color"
+      },
+      "positive": {
+        "value": "#43b81a",
+        "type": "color"
+      }
     }
   },
   "shadow": {
