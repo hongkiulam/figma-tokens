@@ -1,7 +1,7 @@
-export const ColorCopy1 = "#000000";
-export const ColorCopy2 = "#000000";
-export const ColorBg1 = "#000000";
-export const ColorBg2 = "#000000";
+export const ColorCopy1 = "#2f2f2f";
+export const ColorCopy2 = "#545454";
+export const ColorBg1 = "#fafafa";
+export const ColorBg2 = "#d4d4d4";
 export const ColorGrey1 = "#d4d4d4";
 export const ColorGrey2 = "#545454";
 export const ColorPrimaryAccent = "#e88a46";

@@ -2,26 +2,22 @@
   "color": {
     "copy": {
       "1": {
-        "value": "$primary.light",
-        "type": "color",
-        "failedToResolve": true
+        "value": "#fafafa",
+        "type": "color"
       },
       "2": {
-        "value": "$grey.1",
-        "type": "color",
-        "failedToResolve": true
+        "value": "#d4d4d4",
+        "type": "color"
       }
     },
     "bg": {
       "1": {
-        "value": "$primary.dark",
-        "type": "color",
-        "failedToResolve": true
+        "value": "#2f2f2f",
+        "type": "color"
       },
       "2": {
-        "value": "$grey.2",
-        "type": "color",
-        "failedToResolve": true
+        "value": "#545454",
+        "type": "color"
       }
     },
     "grey": {
