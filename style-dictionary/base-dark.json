@@ -382,5 +382,9 @@
       "fontSize": "12px"
     },
     "type": "typography"
+  },
+  "hello": {
+    "value": "world",
+    "type": "spacing"
   }
 }
