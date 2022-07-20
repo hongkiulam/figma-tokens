@@ -29,23 +29,23 @@ $text-case-none: none;
 $text-case-uppercase: uppercase;
 $text-decoration-none: none;
 $text-decoration-underline: underline;
-$breakpoints-xl: 1366px; // >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)
-$breakpoints-md: 1024px; // >=1024: Small desktop and tablet landscape
-$breakpoints-ms: 768px; // >=768px: tablet portrait
-$breakpoints-sm: 375px; // Mobile portrait
+$sizing-breakpoints-xl: 1366px; // >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)
+$sizing-breakpoints-md: 1024px; // >=1024: Small desktop and tablet landscape
+$sizing-breakpoints-ms: 768px; // >=768px: tablet portrait
+$sizing-breakpoints-sm: 375px; // Mobile portrait
 $border-radius-s: 2px;
 $border-radius-none: 0px;
-$space-0: 4px; // 4px
-$space-1: 8px; // 8px
-$space-2: 16px; // 16px
-$space-3: 24px; // 24px
-$space-4: 32px; // 32px
-$space-5: 40px; // 40px
-$space-6: 48px; // 48px
-$space-7: 56px; // 56px
-$space-8: 64px; // 64px
-$space-9: 72px; // 72px
-$space-10: 80px; // 80px
+$spacing-0: 4px; // 4px
+$spacing-1: 8px; // 8px
+$spacing-2: 16px; // 16px
+$spacing-3: 24px; // 24px
+$spacing-4: 32px; // 32px
+$spacing-5: 40px; // 40px
+$spacing-6: 48px; // 48px
+$spacing-7: 56px; // 56px
+$spacing-8: 64px; // 64px
+$spacing-9: 72px; // 72px
+$spacing-10: 80px; // 80px
 $border-width-1: 1px; // 1px
 $border-width-2: 2px; // 2px
 $opacity-20: 0.2; // 20%

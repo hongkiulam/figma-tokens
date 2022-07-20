@@ -29,23 +29,23 @@ export const TextCaseNone = "none";
 export const TextCaseUppercase = "uppercase";
 export const TextDecorationNone = "none";
 export const TextDecorationUnderline = "underline";
-export const BreakpointsXl = "1366px"; // >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)
-export const BreakpointsMd = "1024px"; // >=1024: Small desktop and tablet landscape
-export const BreakpointsMs = "768px"; // >=768px: tablet portrait
-export const BreakpointsSm = "375px"; // Mobile portrait
+export const SizingBreakpointsXl = "1366px"; // >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)
+export const SizingBreakpointsMd = "1024px"; // >=1024: Small desktop and tablet landscape
+export const SizingBreakpointsMs = "768px"; // >=768px: tablet portrait
+export const SizingBreakpointsSm = "375px"; // Mobile portrait
 export const BorderRadiusS = "2px";
 export const BorderRadiusNone = "0px";
-export const Space0 = "4px"; // 4px
-export const Space1 = "8px"; // 8px
-export const Space2 = "16px"; // 16px
-export const Space3 = "24px"; // 24px
-export const Space4 = "32px"; // 32px
-export const Space5 = "40px"; // 40px
-export const Space6 = "48px"; // 48px
-export const Space7 = "56px"; // 56px
-export const Space8 = "64px"; // 64px
-export const Space9 = "72px"; // 72px
-export const Space10 = "80px"; // 80px
+export const Spacing0 = "4px"; // 4px
+export const Spacing1 = "8px"; // 8px
+export const Spacing2 = "16px"; // 16px
+export const Spacing3 = "24px"; // 24px
+export const Spacing4 = "32px"; // 32px
+export const Spacing5 = "40px"; // 40px
+export const Spacing6 = "48px"; // 48px
+export const Spacing7 = "56px"; // 56px
+export const Spacing8 = "64px"; // 64px
+export const Spacing9 = "72px"; // 72px
+export const Spacing10 = "80px"; // 80px
 export const BorderWidth1 = "1px"; // 1px
 export const BorderWidth2 = "2px"; // 2px
 export const Opacity20 = 0.2; // 20%

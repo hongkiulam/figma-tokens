@@ -172,26 +172,28 @@
       "type": "textDecoration"
     }
   },
-  "breakpoints": {
-    "xl": {
-      "value": 1366,
-      "type": "sizing",
-      "description": ">=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)"
-    },
-    "md": {
-      "value": 1024,
-      "type": "sizing",
-      "description": ">=1024: Small desktop and tablet landscape"
-    },
-    "ms": {
-      "value": 768,
-      "type": "sizing",
-      "description": ">=768px: tablet portrait"
-    },
-    "sm": {
-      "value": 375,
-      "type": "sizing",
-      "description": "Mobile portrait"
+  "sizing": {
+    "breakpoints": {
+      "xl": {
+        "value": 1366,
+        "type": "sizing",
+        "description": ">=1080px: Extra large and large desktop screen sizes (Mockups on 1440px)"
+      },
+      "md": {
+        "value": 1024,
+        "type": "sizing",
+        "description": ">=1024: Small desktop and tablet landscape"
+      },
+      "ms": {
+        "value": 768,
+        "type": "sizing",
+        "description": ">=768px: tablet portrait"
+      },
+      "sm": {
+        "value": 375,
+        "type": "sizing",
+        "description": "Mobile portrait"
+      }
     }
   },
   "borderRadius": {
@@ -204,7 +206,7 @@
       "type": "borderRadius"
     }
   },
-  "space": {
+  "spacing": {
     "0": {
       "value": "4px",
       "type": "spacing",
