@@ -66,4 +66,3 @@ export const FontSizeH2 = "24px";
 export const FontSizeH1 = "36px";
 export const FontSizeSmall = "12px";
 export const Small = {"fontFamily":"Baloo 2","fontWeight":"Regular","lineHeight":"AUTO","fontSize":"12px"};
-export const Hello = "world";
