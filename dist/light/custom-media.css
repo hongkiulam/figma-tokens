@@ -1,8 +1,16 @@
-@custom-media --breakpoints-xl-max (max-width: 1366px); /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
-@custom-media --breakpoints-xl-min (min-width: 1366px); /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
-@custom-media --breakpoints-md-max (max-width: 1024px); /* >=1024: Small desktop and tablet landscape */
-@custom-media --breakpoints-md-min (min-width: 1024px); /* >=1024: Small desktop and tablet landscape */
-@custom-media --breakpoints-ms-max (max-width: 768px); /* >=768px: tablet portrait */
-@custom-media --breakpoints-ms-min (min-width: 768px); /* >=768px: tablet portrait */
-@custom-media --breakpoints-sm-max (max-width: 375px); /* Mobile portrait */
-@custom-media --breakpoints-sm-min (min-width: 375px); /* Mobile portrait */
+ /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
+@custom-media --breakpoints-xl-max (max-width: 1366px);
+ /* >=1080px: Extra large and large desktop screen sizes (Mockups on 1440px) */
+@custom-media --breakpoints-xl-min (min-width: 1366px);
+ /* >=1024: Small desktop and tablet landscape */
+@custom-media --breakpoints-md-max (max-width: 1024px);
+ /* >=1024: Small desktop and tablet landscape */
+@custom-media --breakpoints-md-min (min-width: 1024px);
+ /* >=768px: tablet portrait */
+@custom-media --breakpoints-ms-max (max-width: 768px);
+ /* >=768px: tablet portrait */
+@custom-media --breakpoints-ms-min (min-width: 768px);
+ /* Mobile portrait */
+@custom-media --breakpoints-sm-max (max-width: 375px);
+ /* Mobile portrait */
+@custom-media --breakpoints-sm-min (min-width: 375px);

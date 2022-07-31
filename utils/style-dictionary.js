@@ -46,8 +46,8 @@ module.exports = (source, destinationDir) => {
       breakpointTokens.forEach((token) => {
         const comment = token.comment ? ` /* ${token.comment} */` : "";
         const variableKebabName = token.path.join("-");
-        const max = `@custom-media --${variableKebabName}-max (max-width: ${token.value});${comment}\n`;
-        const min = `@custom-media --${variableKebabName}-min (min-width: ${token.value});${comment}\n`;
+        const max = `${comment}\n@custom-media --${variableKebabName}-max (max-width: ${token.value});\n`;
+        const min = `${comment}\n@custom-media --${variableKebabName}-min (min-width: ${token.value});\n`;
         output += max + min;
       });
       return output
