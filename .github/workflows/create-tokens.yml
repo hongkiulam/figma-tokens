@@ -16,6 +16,8 @@ jobs:
       - run: npm install
       # Build
       - run: npm run build
+      - name: Add timestamp to build if there were changes
+        run: if [ "$(git diff)" ]; then echo $(date) > dist/build-date.txt; else echo 0;fi
       # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
