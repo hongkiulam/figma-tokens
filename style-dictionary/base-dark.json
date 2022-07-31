@@ -148,7 +148,7 @@
       "type": "paragraphSpacing"
     },
     "1": {
-      "value": "8px",
+      "value": 8,
       "type": "paragraphSpacing"
     }
   },
@@ -206,57 +206,57 @@
   },
   "spacing": {
     "0": {
-      "value": "4px",
+      "value": 4,
       "type": "spacing",
       "description": "4px"
     },
     "1": {
-      "value": "8px",
+      "value": 8,
       "type": "spacing",
       "description": "8px"
     },
     "2": {
-      "value": "16px",
+      "value": 16,
       "type": "spacing",
       "description": "16px"
     },
     "3": {
-      "value": "24px",
+      "value": 24,
       "type": "spacing",
       "description": "24px"
     },
     "4": {
-      "value": "32px",
+      "value": 32,
       "type": "spacing",
       "description": "32px"
     },
     "5": {
-      "value": "40px",
+      "value": 40,
       "type": "spacing",
       "description": "40px"
     },
     "6": {
-      "value": "48px",
+      "value": 48,
       "type": "spacing",
       "description": "48px"
     },
     "7": {
-      "value": "56px",
+      "value": 56,
       "type": "spacing",
       "description": "56px"
     },
     "8": {
-      "value": "64px",
+      "value": 64,
       "type": "spacing",
       "description": "64px"
     },
     "9": {
-      "value": "72px",
+      "value": 72,
       "type": "spacing",
       "description": "72px"
     },
     "10": {
-      "value": "80px",
+      "value": 80,
       "type": "spacing",
       "description": "80px"
     }

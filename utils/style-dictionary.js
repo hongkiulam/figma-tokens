@@ -11,16 +11,10 @@ module.exports = (source, destinationDir) => {
             options: { showFileHeader: false },
             filter: "omitTypography",
           },
-        ],
-      },
-      scss: {
-        transformGroup: "scss",
-        files: [
           {
-            destination: `${destinationDir}/variables.scss`,
-            format: "scss/variables",
+            destination: `${destinationDir}/custom-media.css`,
+            format: "css/custom-media",
             options: { showFileHeader: false },
-            filter: "omitTypography",
           },
         ],
       },
@@ -34,6 +28,29 @@ module.exports = (source, destinationDir) => {
           },
         ],
       },
+    },
+  });
+
+  // Custom Formats
+
+  StyleDictionary.registerFormat({
+    name: "css/custom-media",
+    formatter: (dictionary) => {
+      const breakpointTokens = dictionary.allTokens.filter(
+        (token) =>
+          token.path.includes("breakpoint") ||
+          token.path.includes("breakpoints")
+      );
+
+      let output = ``;
+      breakpointTokens.forEach((token) => {
+        const comment = token.comment ? ` /* ${token.comment} */` : "";
+        const variableKebabName = token.path.join("-");
+        const max = `@custom-media --${variableKebabName}-max (max-width: ${token.value});${comment}\n`;
+        const min = `@custom-media --${variableKebabName}-min (min-width: ${token.value});${comment}\n`;
+        output += max + min;
+      });
+      return output
     },
   });
 
@@ -116,27 +133,12 @@ module.exports = (source, destinationDir) => {
     "descriptionToComment",
   ];
 
-  // Transform Groups
+  // Custom Transform Groups
 
   StyleDictionary.registerTransformGroup({
     name: "css",
     transforms: [
       // based on https://amzn.github.io/style-dictionary/#/transform_groups?id=css
-      "attribute/cti",
-      "name/cti/kebab",
-      "time/seconds",
-      "content/icon",
-      "size/rem",
-      "color/css",
-      // custom transforms
-      ...customTransforms,
-    ],
-  });
-
-  StyleDictionary.registerTransformGroup({
-    name: "scss",
-    transforms: [
-      // based on https://amzn.github.io/style-dictionary/#/transform_groups?id=scss
       "attribute/cti",
       "name/cti/kebab",
       "time/seconds",
