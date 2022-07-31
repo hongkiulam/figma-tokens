@@ -370,7 +370,7 @@
       "type": "fontSizes"
     },
     "small": {
-      "value": "12px",
+      "value": 12,
       "type": "fontSizes"
     }
   },
@@ -379,7 +379,7 @@
       "fontFamily": "Baloo 2",
       "fontWeight": "Regular",
       "lineHeight": "AUTO",
-      "fontSize": "12px"
+      "fontSize": 12
     },
     "type": "typography"
   }
