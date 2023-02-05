@@ -17,8 +17,8 @@
   --font-families-body: Baloo 2;
   --font-families-heading: Baloo 2;
   --line-heights-0: AUTO;
-  --line-heights-1: 130%;
-  --line-heights-2: 120%;
+  --line-heights-1: 1.3;
+  --line-heights-2: 1.2;
   --font-weights-regular: 400;
   --font-weights-bold: 700;
   --font-weights-light: 300;

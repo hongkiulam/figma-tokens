@@ -23,4 +23,4 @@ jobs:
         with:
           commit_message: "[auto-commit] Update Tokens - ${{ github.event.head_commit.message }}"
       # Purges cache for dist
-      - run: node utils/purgeDist
+      - run: node build-utils/purgeDist

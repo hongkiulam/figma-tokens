@@ -1,30 +1,40 @@
+// @ts-check
 module.exports = (source, destinationDir) => {
   const StyleDictionary = require("style-dictionary").extend({
     source: [source],
     platforms: {
-      css: {
+      "web/css": {
         transformGroup: "css",
+        buildPath: destinationDir,
         files: [
           {
-            destination: `${destinationDir}/variables.css`,
+            destination: `variables.css`,
             format: "css/variables",
             options: { showFileHeader: false },
-            filter: "omitTypography",
+            filter: "cssFilter",
           },
           {
-            destination: `${destinationDir}/custom-media.css`,
+            destination: "custom-media.css",
             format: "css/custom-media",
             options: { showFileHeader: false },
           },
         ],
       },
-      js: {
+      "web/js": {
         transformGroup: "js",
+        buildPath: destinationDir,
         files: [
           {
-            destination: `${destinationDir}/variables.js`,
-            format: "javascript/es6",
+            destination: `variables.js`,
+            format: "javascript/module-custom",
             options: { showFileHeader: false },
+            filter: "jsFilter",
+          },
+          {
+            destination: `tokens.d.ts`,
+            format: "typescript/accurate-module-declarations",
+            options: { showFileHeader: false },
+            filter: "jsFilter",
           },
         ],
       },
@@ -35,7 +45,7 @@ module.exports = (source, destinationDir) => {
 
   StyleDictionary.registerFormat({
     name: "css/custom-media",
-    formatter: (dictionary) => {
+    formatter: ({ dictionary }) => {
       const breakpointTokens = dictionary.allTokens.filter(
         (token) =>
           token.path.includes("breakpoint") ||
@@ -50,24 +60,93 @@ module.exports = (source, destinationDir) => {
         const min = `${comment}\n@custom-media --${variableKebabName}-min (min-width: ${token.value});\n`;
         output += max + min;
       });
-      return output
+      return output;
     },
   });
 
+  /**
+   * converts `primary: { value: "red", attributes: "", ...}` to `primary: "red"`
+   * @param {import('style-dictionary').Dictionary} dictionary
+   */
+  const javascriptModuleFormat = (dictionary) => {
+    const onlyFinalValues = { ...dictionary.properties };
+    /**
+     * @param {typeof dictionary.properties} obj
+     */
+    const getNestedValue = (obj) => {
+      for (const key in obj) {
+        if (obj[key].value !== undefined) {
+          obj[key] = obj[key].value;
+        } else {
+          getNestedValue(obj[key]);
+        }
+      }
+    };
+    getNestedValue(onlyFinalValues);
+    return JSON.stringify(onlyFinalValues, null, 2);
+  };
+  StyleDictionary.registerFormat({
+    name: "javascript/module-custom",
+    formatter: function ({ dictionary }) {
+      return `module.exports = ${javascriptModuleFormat(dictionary)};`;
+    },
+  });
+
+  StyleDictionary.registerFormat({
+    name: "typescript/accurate-module-declarations",
+    formatter: function ({ dictionary }) {
+      let typesObjectString = javascriptModuleFormat(dictionary);
+      const keyRegex = /\"(.*)\"/.source; // "key"
+      const trailingCommaRegex = /,?/.source;
+      const valueRegexes = [
+        /{/, // { - not needed but the output looks cleaner
+        /\".*\"/, // "100px"
+        /-?\d+\.\d+/, // 1.00
+        /-?\d+/, // 100
+      ].map((r) => r.source);
+
+      typesObjectString = typesObjectString.replace(
+        new RegExp(
+          `${keyRegex}: (${valueRegexes.join("|")})${trailingCommaRegex}`,
+          "g"
+        ),
+        (match, one, two) => {
+          if (match.includes("{")) {
+            return `${one}: ${two}`;
+          }
+          return `${one}: ${two};`;
+        }
+      );
+
+      return (
+        "declare const root: RootObject;\n" +
+        "export default root;\n" +
+        `interface RootObject ${typesObjectString}`
+      );
+    },
+  });
   // Custom Filters
 
+  const typographyFilter = (token) => token.type === "typography";
+
   StyleDictionary.registerFilter({
-    name: "omitTypography",
-    matcher: (token) => token.type !== "typography",
+    name: "cssFilter",
+    matcher: (token) => !typographyFilter(token),
+  });
+
+  StyleDictionary.registerFilter({
+    name: "jsFilter",
+    matcher: (token) => !typographyFilter(token),
   });
 
   // Custom Transforms
-
   StyleDictionary.registerTransform({
     name: "numberToPx",
     type: "value",
     matcher: (token) =>
-      typeof token.value === "number" && token.type !== "opacity",
+      typeof token.value === "number" &&
+      token.type !== "opacity" &&
+      token.attributes?.category !== "zIndex",
     transformer: (token) => `${token.value}px`,
   });
 
@@ -119,10 +198,35 @@ module.exports = (source, destinationDir) => {
   });
 
   StyleDictionary.registerTransform({
+    name: "lineHeightPercentageToDecimal",
+    type: "value",
+    matcher: (token) =>
+      token.type === "lineHeights" && token.value.endsWith("%"),
+    transformer: (token) => {
+      const rawNumber = Number(token.value.replace("%", ""));
+      const percentageAsDecValue = rawNumber / 100;
+      return percentageAsDecValue;
+    },
+  });
+
+  StyleDictionary.registerTransform({
     name: "descriptionToComment",
     type: "attribute",
     matcher: (token) => token.description,
     transformer: (token) => (token.comment = token.description),
+  });
+
+  StyleDictionary.registerTransform({
+    name: "removePxFromBreakpoints",
+    type: "value",
+    matcher: (token) => token.attributes?.category === "breakpoints",
+    transformer: (token) => {
+      if (token.value.includes("px")) {
+        return parseInt(token.value.replace("px", ""));
+      } else {
+        return token.value;
+      }
+    },
   });
 
   const customTransforms = [
@@ -131,6 +235,7 @@ module.exports = (source, destinationDir) => {
     "fontweightsToNumber",
     "letterSpacingPercentageToEM",
     "descriptionToComment",
+    "lineHeightPercentageToDecimal",
   ];
 
   // Custom Transform Groups
@@ -158,6 +263,7 @@ module.exports = (source, destinationDir) => {
       "size/rem",
       "color/hex",
       ...customTransforms,
+      "removePxFromBreakpoints",
     ],
   });
 

@@ -2,8 +2,8 @@ const exec = require("child_process").execSync;
 const processStyleDictionary = require("./style-dictionary");
 
 const config = [
-  { outputDir: "dist/light", tokenSetIncludes: ["base", "light"] },
-  { outputDir: "dist/dark", tokenSetIncludes: ["base", "dark"] },
+  { outputDir: "dist/light/", tokenSetIncludes: ["base", "light"] },
+  { outputDir: "dist/dark/", tokenSetIncludes: ["base", "dark"] },
 ];
 
 config.forEach((c) => {
@@ -16,6 +16,6 @@ config.forEach((c) => {
       ","
     )}`
   );
-  // generate final output from style dictionary file case on the config in utils/style-dictionary.js
+  // generate final output from style dictionary file case on the config in build-utils/style-dictionary.js
   processStyleDictionary(styleDictionaryOutput, c.outputDir);
 });

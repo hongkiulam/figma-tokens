@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "prebuild": "rm -rf ./dist/* && rm -rf ./style-dictionary/*",
-    "build": "node utils/build.js"
+    "build": "node build-utils/build.js"
   },
   "repository": {
     "type": "git",
