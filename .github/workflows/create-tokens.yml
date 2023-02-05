@@ -1,8 +1,5 @@
 name: Build Tokens From Figma Changes
-on:
-  push:
-    branches:
-      - "main"
+on: push
 
 jobs:
   build:
@@ -23,4 +20,4 @@ jobs:
         with:
           commit_message: "[auto-commit] Update Tokens - ${{ github.event.head_commit.message }}"
       # Purges cache for dist
-      - run: node build-utils/purgeDist
+      - run: node build-utils/purgeDist --branch=${{ vars.ref_name }}
